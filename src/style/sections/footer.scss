@@ -1,0 +1,67 @@
+@import "../img/sprites/sprite";
+
+.footer{
+	flex: 0 0 auto;
+	position: relative;
+	background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/footer-bg.png)repeat center center;
+	height: 87px;
+		&-slogan{
+			font-family: 'EMprint-Semibold';
+			font-size: 25px;
+			font-weight: 600;
+			text-align: left;
+			color: #fff;
+			line-height: 87px;
+		}
+}
+
+.socials{
+	@include clearfix;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+	&-item{
+		@include inlineblock();
+		margin-right: 30px;
+		&:last-child{
+			margin-right: 0;
+		}
+		&_yt{
+			.socials-icon{
+				width: 11px;
+				height: 14px;
+				@include sprite ($yt);
+				background-position: 0px -75px; 
+			}
+		}
+		&_vk{
+			.socials-icon{
+				width: 9px;
+				height: 18px;
+				@include sprite ($vk);
+				background-position: 0px 0px; 
+			}
+		}
+		&_fb{
+			.socials-icon{
+				width: 10px;
+				height: 17px;
+				@include sprite ($fb);
+				background-position: -75px 0px; 
+			}
+		}
+	}
+	&-link{
+		display: block;
+		width: 35px;
+		height: 30px;
+		position: relative;
+	}
+	&-icon{
+		@include absolute__center;
+		background-image: url('https://fast.ulmart.ru/ns/verstka/mobil-bz/img/sprites/sprite.png');
+		background-repeat: no-repeat;
+		height: 35px;
+		width: 35px;
+	}
+}

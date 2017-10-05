@@ -1,0 +1,135 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+
+body
+	.layout_center_wrapper-project
+		header.header-update
+			+top-line-update()
+			h1.header-update__title
+				|Обновленная линейка моторных масел Mobil 1™
+			.header-update__title-desc
+				|Выбирайте моторное масло Mobil 1™, исходя 
+				br
+				|из  потребностей вашего двигателя
+			.container
+				.row
+					+grid-3()
+						.header-update__item
+							a(href="#b-section-1", class="js-scroll")
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/update-icon1.png", alt="", class="header-update__item-picture")
+							a(href="#b-section-1", class="header-update__item-text js-scroll")
+								.header-update__item-text
+									|Защита системы очистки выхлопных газов
+					+grid-3()
+						.header-update__item
+							a(href="#b-section-2", class="js-scroll")
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/update-icon2.png", alt="", class="header-update__item-picture")
+							a(href="#b-section-2", class="header-update__item-text js-scroll")
+								.header-update__item-text
+									|Защита двигателя 
+									br
+									|при увеличенном интервале замены масла
+					+grid-3()
+						.header-update__item
+							a(href="#b-section-3", class="js-scroll")
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/update-icon3.png", alt="", class="header-update__item-picture")
+							a(href="#b-section-3", class="header-update__item-text js-scroll")
+								.header-update__item-text
+									|Двигатель работает как новый 
+					+grid-3()
+						.header-update__item
+							a(href="#b-section-4", class="js-scroll")
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/update-icon4.png", alt="", class="header-update__item-picture")
+							a(href="#b-section-4", class="header-update__item-text js-scroll")
+								.header-update__item-text
+									|Для автомобилей 
+									br
+									|с пробегом 
+									br
+									|более 100 000 км
+		section.b-section.b-section-1#b-section-1
+			h2.b-section__title
+				|Защита системы очистки выхлопных газов
+			.b-section__desc
+				|Моторные масла, которые снижают воздействие на окружающую 
+				br
+				|среду и позволяют экономить топливо.
+			.update-goods
+				.container
+					.row
+						+grid-4()
+							each item, number in goodsUpdateColumn.slice(0,1)
+								+goods-update-column(item)
+						+grid-4()
+							each item, number in goodsUpdateColumn.slice(1,2)
+								+goods-update-column(item)
+						+grid-4()
+							each item, number in goodsUpdateColumn.slice(2,3)
+								+goods-update-column(item)
+
+		section.b-section.b-section-2#b-section-2
+			h2.b-section__title
+				|Защита двигателя при увеличенном
+				br
+				|интервале замены масла
+			.b-section__desc
+				|Моторные масла позволяют увеличить интервал замены масла 
+				br
+				|до 15 тыс. км*. Надежно защищают и обеспечивают чистоту 
+				br
+				|двигателя в сложных условиях вождения.
+			.container
+					.row.align-items-start
+						.offset-lg-1.col-lg-5.col-md-6.col-sm-6.col-12
+							each item, number in goodsUpdateGrid.slice(0,1)
+								+goods-update-grid(item)
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in goodsUpdateGrid.slice(1,2)
+								+goods-update-grid(item)
+			.b-section__note
+				sup *
+				|Всегда сверяйтесь с руководством по эксплуатации Вашего автомобиля для уточнения рекомендуемых интервалов замены масла.
+
+		section.b-section.b-section-3#b-section-3
+			h2.b-section__title
+				|Двигатель работает как новый 
+			.b-section__desc
+				|Моторные масла надежно защищают двигатель и обеспечивают
+				br
+				|его чистоту в широком температурном диапазоне.
+			.container
+					.row.align-items-start
+						.offset-lg-1.col-lg-5.col-md-6.col-sm-6.col-12
+							each item, number in goodsUpdateGrid.slice(2,3)
+								+goods-update-grid(item)
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in goodsUpdateGrid.slice(3,4)
+								+goods-update-grid(item)
+
+		section.b-section.b-section-4#b-section-4
+			h2.b-section__title
+				|Для автомобилей с пробегом 
+				br
+				|более 100 000 км
+			.b-section__desc
+				|Моторные масла надежно защищают двигатель и обеспечивают 
+				br
+				|его чистоту в широком температурном диапазоне.
+			.container
+					.row.align-items-start
+						.offset-lg-1.col-lg-5.col-md-6.col-sm-6.col-12
+							each item, number in goodsUpdateGrid.slice(4,5)
+								+goods-update-grid(item)
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in goodsUpdateGrid.slice(5,6)
+								+goods-update-grid(item)
+
+
+
+
+
+	+footer-text()
+
+	include blocks/footer-service/footer-service

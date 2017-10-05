@@ -1,0 +1,192 @@
+.update{
+	&-section{
+		background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/update-section-bg.jpg)no-repeat center center;
+		min-height: 636px;
+		padding: 48px 0 0 0;
+		text-align: left;
+		color: #fff;
+		background-size: cover;
+	}
+	&-title{
+		font-family: 'EMprint-Semibold';
+		font-size: 52px;
+		font-weight: 600;
+		line-height: 1.12;
+		margin-bottom: 20px;
+	}
+	&-text{
+		font-family: 'EMprint-Regular';
+		font-size: 20px;
+		line-height: 1.4;
+		margin-bottom: 50px;
+	}
+	&-goods{
+		&__img{
+			display: block;
+			margin: 0 auto 8px auto;
+			width: 178px;
+		}
+		&__title{
+			font-family: 'EMprint-Semibold';
+			font-size: 25px;
+			line-height: 1.3;
+			margin-bottom: 33px;
+			color: #fff;
+			display: block;
+			&:hover{
+				color: #0c469c;
+			}
+			&:focus{
+				color: #0c469c;
+			}
+		}
+		&__link{
+			font-family: 'EMprint-Semibold';
+			font-size: 25px;
+			line-height: 1.5;
+			padding: 11px 66px;
+			border: solid 2px #ffffff;
+			color: #fff;
+			&:hover{
+				background: #fff;
+				border: solid 2px #ffffff;
+				color: #000;
+			}
+		}
+		&-grid{
+			&__img{
+				width: 177px;
+			}
+			&__title{
+				font-family: 'EMprint-Semibold';
+				font-size: 25px;
+				line-height: 1.3;
+				margin-bottom: 33px;
+				display: block;
+				color: #fff;
+				&:hover{
+					color: #0c469c;
+				}
+				&:focus{
+					color: #0c469c;
+					border-bottom: 1px solid #0c469c;
+				}
+			}
+			&__link{
+				font-family: 'EMprint-Semibold';
+				font-size: 25px;
+				line-height: 1.5;
+				padding: 11px 66px;
+				border: solid 2px #ffffff;
+				color: #fff;
+				&:hover{
+					background: #fff;
+					border: solid 2px #ffffff;
+					color: #000;
+				}
+			}
+		}
+	}
+	
+}
+
+.update-goods-wrapper{
+	position: relative;
+	
+}
+.update-goods-wrapper-inner{
+	display: flex;
+	flex-wrap:wrap;
+	text-align: center;
+}
+.update-goods-grid__wrap-inner{
+	flex-basis:60%;
+	text-align: left;
+}
+.b-section{
+	padding: 90px 0;
+	position: relative;
+	color: #fff;
+	text-align: center;
+
+	&__title{
+		font-family: 'EMprint-Semibold';
+		font-size: 50px;
+		line-height: 1;
+		margin-bottom: 30px;
+	}
+	&__desc{
+		font-family: 'EMprint-Regular';
+		font-size: 30px;
+		line-height: 1.13;
+		margin-bottom: 70px;
+	}
+	&__note{
+		color: #fff;
+		font-size: 16px;
+		line-height: 2.1;
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	&-1{
+		background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/b-section-1.jpg)no-repeat top center;
+		height: 780px;
+		background-size: cover;
+		&:after{
+			content: "";
+			display: block;
+			width: 432px;
+			height: 100%;
+			background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/b-section-1-after.png)no-repeat top center;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	&-2{
+		background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/b-section-2.jpg)no-repeat top center;
+		height: 812px;
+		background-size: cover;
+		&:after{
+			content: "";
+			display: block;
+			width: 474px;
+			height: 100%;
+			background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/b-section-2-after.png)no-repeat top center;
+			position: absolute;
+			top: 42px;
+			right: 0;
+		}
+	}
+	&-3{
+		background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/b-section-3.jpg)no-repeat top center;
+		height: 780px;
+		background-size: cover;
+		&:after{
+			content: "";
+			display: block;
+			width: 432px;
+			height: 100%;
+			background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/b-section-3-after.png)no-repeat top center;
+			position: absolute;
+			top: 30px;
+			left: 0;
+		}
+	}
+	&-4{
+		background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/b-section-4.jpg)no-repeat top center;
+		height: 770px;
+		background-size: cover;
+		&:after{
+			content: "";
+			display: block;
+			width: 474px;
+			height: 100%;
+			background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/b-section-4-after.png)no-repeat top center;
+			position: absolute;
+			top: 24px;
+			right: 0;
+		}
+	}
+}

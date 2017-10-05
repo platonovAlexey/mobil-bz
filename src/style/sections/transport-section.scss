@@ -1,0 +1,102 @@
+.transport{
+	&-left{
+		position: relative;
+		z-index: 11;
+		width: 100%;
+		&-arr{
+			width: 60px;
+			height: 60px;
+			transform: rotate(-45deg);
+			background-color: #000;
+			position: absolute;
+			bottom: -30px;
+			left:20%;
+			display: none;
+		}
+	}
+	&-right{
+		position: relative;
+		z-index: 11;
+		width: 100%;
+		padding-left: 62px;
+		&-arr{
+			width: 60px;
+			height: 60px;
+			transform: rotate(-45deg);
+			background-color: #f8cc00;
+			position: absolute;
+			bottom: -30px;
+			right:20%;
+			display: none;
+		}
+	}
+
+	&-section{
+		background: linear-gradient(to right, #000000 50%, #f8cc00 50%);
+		position: relative;
+		padding: 66px 0 0px 0;
+		text-align: left;
+		color: #fff;
+		height: 684px;
+	}
+
+	&__img{
+		&-left{
+			position: absolute;
+			right: 0;
+			top: 212px;
+			z-index: 10;
+		}
+		&-right{
+			position: absolute;
+			right: 0;
+			top: 151px;
+			z-index: 10;
+			&-inner{
+				position: absolute;
+				right: -290px;
+				top: -11px;
+				z-index: -1;
+			}
+		}
+	}
+
+	&-logo{
+		margin-bottom: 51px;
+	}
+	&-title{
+		font-family: 'EMprint-Bold';
+		font-size: 40px;
+		font-weight: bold;
+		line-height: 1.15;
+		margin-bottom: 20px;
+	}
+	&-text{
+		font-family: 'EMprint-Semibold';
+		font-size: 19px;
+		font-weight: 600;
+		line-height: 1.16;
+		margin-bottom: 40px;
+	}
+	&-btn{
+		@extend .all-btn;
+	}
+
+}
+
+.transport-right .transport-title, .transport-right .transport-text {
+	color: #000000;
+}
+.transport-right .commercial-btn{
+	color: #000000;
+	border: 2px solid #000000;
+	&:hover{
+		background: #000;
+		color: #fff;
+		border: 2px solid #000000;
+	}
+}
+
+.transport-right .transport-text{
+	margin-bottom: 35px;
+}
