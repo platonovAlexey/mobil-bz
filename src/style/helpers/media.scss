@@ -2,16 +2,25 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1900px) {
-	.b-section-1:after,.b-section-2:after, .b-section-3:after, .b-section-4:after{
-		display: none;
-	}
+	
 }
 @media only screen and (max-width : 1600px) {
 
 }
 
 @media only screen and (max-width : 1200px) {
-
+	.b-section-1:after,.b-section-2:after, .b-section-3:after, .b-section-4:after{
+		display: none;
+	}
+	.header-update__title{
+		font-size: 44px;
+	}
+	.update-goods-grid__img{
+		width: 130px;
+	}
+	.update-goods-grid__title, .update-goods__title{
+		font-size: 22px;
+	}
 }
 
 /* Medium Devices, Desktops */

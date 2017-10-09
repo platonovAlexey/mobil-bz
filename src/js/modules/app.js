@@ -52,4 +52,24 @@ $(document).ready(function() {
         top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+
+    $('.js-banner-link-one').click(function(e){
+        e.preventDefault();
+        $('body,html').animate({scrollTop : 2100},2000);
+
+        commercialSection.show("slow");
+        transportRightArr.show("slow");
+        passengerSection.hide("slow");
+        transportLeftArr.hide("slow");
+    });
+    $('.js-banner-link-two').click(function(e){
+        e.preventDefault();
+        $('body,html').animate({scrollTop : 1900},2000);
+        
+        commercialSection.hide("slow");
+        transportRightArr.hide("slow");
+        passengerSection.show("slow");
+        transportLeftArr.show("slow");
+    });
+
 });
