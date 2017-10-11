@@ -21,6 +21,9 @@
 	.update-goods-grid__title, .update-goods__title{
 		font-size: 22px;
 	}
+	.top-line__shop{
+		padding: 8px 5px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -32,26 +35,131 @@
 @media only screen and (max-width : 768px) {
 
 	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
+	// .animated {
+	// 	/*CSS transitions*/
+	// 	-o-transition-property: none !important;
+	// 	-moz-transition-property: none !important;
+	// 	-ms-transition-property: none !important;
+	// 	-webkit-transition-property: none !important;
+	// 	transition-property: none !important;
+	// 	/*CSS transforms*/
+	// 	-o-transform: none !important;
+	// 	-moz-transform: none !important;
+	// 	-ms-transform: none !important;
+	// 	-webkit-transform: none !important;
+	// 	transform: none !important;
+	// 	/*CSS animations*/
+	// 	-webkit-animation: none !important;
+	// 	-moz-animation: none !important;
+	// 	-o-animation: none !important;
+	// 	-ms-animation: none !important;
+	// 	animation: none !important;
+	// }
+
+	.top-line__shop{
+		font-size: 14px;
 	}
+	.banner-title{
+		font-size: 38px;
+	}
+	.transport__img-right-inner, .transport__img-left{
+		display: none;
+	}
+
+	.transport-text{
+		font-size: 23px;
+	}
+	.passenger-find__title{
+		margin-bottom: 30px;
+	}
+	.commercial-main-banner{
+		height: 1000px;
+		background-size: cover;
+	}
+	.banner-mobil-devlac{
+		position: relative;
+		top: 35px;
+	}
+
+	.update-title{
+		font-size: 38px;
+		margin-bottom: 10px;
+	}
+	.update-text{
+		font-size: 20px;
+		margin-bottom: 35px;
+	}
+
+	.passenger-goods__title{
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+	.passenger-goods__text{
+		height: 200px;
+	}
+	.passenger-goods__img{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.passenger-find__btn-mod{
+		margin-left: 0;
+	}
+	.commercial-goods-wrapper{
+		margin-bottom: 50px;
+	}
+
+	//Update page
+	.b-section{
+		padding: 40px 0;
+	}
+	.b-section-1{
+		height: 870px;
+	}
+	.b-section-2{
+		height: 670px;
+	}
+	.b-section-3{
+		height: 500px;
+	}
+	.b-section-4{
+		height: 500px;
+	}
+	.b-section__title{
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	.b-section__desc{
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.header-update__title{
+		font-size: 30px;
+		line-height: 1.1;
+		margin-top: 0;
+	}
+	.header-update__title-desc{
+		font-size: 28px;
+		margin-bottom: 25px;
+	}
+	.header-update__item{
+		margin-bottom: 20px;
+	}
+	.header-update__item-text{
+		font-size: 20px;
+	}
+	.b-section__note{
+		font-size: 21px;
+		margin-top: 40px;
+		line-height: 1.2;
+	}
+	.update-goods-grid__img{
+		margin: 0 auto;
+	}
+	.update-goods-grid__wrap-inner{
+		flex-basis: 100%;
+		text-align: center;
+	}
+
 
 }
 
@@ -61,7 +169,49 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.top-line{
+		height: auto;
+		text-align: center;
+		padding: 10px 0;
+	}
 
+
+	//Update page mobile
+	.b-section-1, .b-section-2, .b-section-3, .b-section-4{
+		height: auto;
+	}
+	.b-section__title{
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+	.b-section__desc{
+		font-size: 16px;
+	}
+	.header-update{
+		height: auto;
+	}
+	.top-line.update-page{
+		height: auto;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.header-update__title{
+		font-size: 22px;
+	}
+	.header-update__title-desc{
+		font-size: 14px;
+	}
+	.header-update__item-text{
+		font-size: 18px;
+	}
+	.footer{
+		background-repeat: repeat;
+		height: auto;
+	}
+	.socials{
+		justify-content: flex-start;
+		margin-bottom: 30px;
+	}
 }
 
 /* Custom, iPhone Retina */

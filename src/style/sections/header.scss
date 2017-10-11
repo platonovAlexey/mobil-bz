@@ -115,6 +115,7 @@
 			background-size: cover;
 			.banner-title{
 				color: #000;
+				margin-bottom: 10px;
 			}
 			.banner-text{
 				color: #000;
@@ -138,7 +139,7 @@
 		font-weight: 600;
 		color: #fff;
 		text-align: left;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 	&-text{
 		font-family: 'EMprint-Regular';
@@ -146,7 +147,7 @@
 		line-height: 1.25;
 		color: #fff;
 		text-align: left;
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	}
 	&-link{
 		@extend .transport-btn;
@@ -181,6 +182,12 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+.slider{
+	display: block;
+	position: relative;
+	width: 100%;
 }
 
 

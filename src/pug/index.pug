@@ -59,7 +59,7 @@ body
 			.passenger-banner
 				.container
 					.row.align-items-start
-						.col-lg-7.col-md-8.col-sm-12.col-12
+						.col-lg-7.col-md-12.col-sm-12.col-12
 							.passenger-banner-wrapper
 								.passenger-banner__title
 									|Mobil 1™ Двигатель работает
@@ -73,9 +73,9 @@ body
 									|обеспечить непревзойденную защиту и превосходные рабочие
 									br
 									|характеристики Вашего двигателя. 
-						.col-lg-5.col-md-4.col-sm-12.col-12
+						.col-lg-5.col-md-12.col-sm-12.col-12
 							.passenger-banner__img
-								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-mobil-1.png", alt="")
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-mobil-1.png", alt="", class="passenger-banner__img-one")
 			.goods-section
 				.container
 					.row.align-items-start
@@ -94,10 +94,10 @@ body
 							each item, number in passengerGoods.slice(3,4)
 								+passenger-goods(item)
 
-			.passenger-banner
+			.passenger-banner.passenger-banner-second
 				.container
 					.row.align-items-start
-						.col-lg-7.col-md-8.col-sm-12.col-12
+						.col-lg-7.col-md-12.col-sm-12.col-12
 							.passenger-banner-wrapper
 								.passenger-banner__title
 									|Mobil Super™  Эффективная защита 
@@ -105,9 +105,9 @@ body
 									|для долгой жизни Вашего двигателя
 								.passenger-banner__text
 									|Mobil Super —масла премиум-класса. Они разработаны специально для того, чтобы обеспечить отличную защиту двигателя и его надежную работу, что позволяет вам ездить с полной уверенность.
-						.col-lg-5.col-md-4.col-sm-12.col-12
+						.col-lg-5.col-md-12.col-sm-12.col-12
 							.passenger-banner__img
-								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-mobil-super.png", alt="")
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-mobil-super.png", alt="", class="passenger-banner__img-two")
 
 			.goods-section
 				.container
@@ -122,18 +122,18 @@ body
 			.passenger-find
 				.container
 					.row.align-items-center
-						.col-lg-8.col-md-8.col-sm-6.col-12
+						.col-lg-8.col-md-12.col-sm-6.col-12
 							.passenger-find__title
 								|Не нашли что искали? 
 								br
 								span Ознакомьтесь со всеми продуктами Mobil для пассажирского транспорта
-						.col-lg-4.col-md-4.col-sm-6.col-12
+						.col-lg-4.col-md-12.col-sm-6.col-12
 							a(href="https://www.ulmart.ru/catalog/engine_oil/brand_mobil", class="passenger-find__btn passenger-find__btn-mod", target="_blank") Ознакомиться
 		section.commercial-section
 			.commercial-main-banner
 				.container
 					.row.align-items-start
-						.col-lg-8.col-md-6.col-sm-12.col-12
+						.col-lg-8.col-md-45.col-sm-12.col-12
 							.commercial-main-banner__title
 								span Mobil Delvac™
 								|помогает легкому
@@ -141,7 +141,7 @@ body
 								|коммерческому транспорту
 								br
 								| в тяжелой работе
-						.col-lg-4.col-md-6.col-sm-12.col-12
+						.col-lg-4.col-md-45.col-sm-12.col-12
 							img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/commercial-main-banner-product.png", alt="", class="commercial-main-banner__product")
 			.commercial-goods-section
 				.container
@@ -155,13 +155,13 @@ body
 			.passenger-banner.commercial-banner
 				.container
 					.row.align-items-start
-						.col-lg-7.col-md-8.col-sm-12.col-12
+						.col-lg-7.col-md-12.col-sm-12.col-12
 							.passenger-banner-wrapper
 								.passenger-banner__title
 									|Моторные масла Mobil Delvac™
 								.passenger-banner__text
 									|Моторные масла Mobil Delvac ™ предназначены для использования в коммерческом транспорте большой, средней и малой грузоподъемности. Они способствуют увеличению как срока службы двигателя, так и межсервисных интервалов. 
-						.col-lg-5.col-md-4.col-sm-12.col-12
+						.col-lg-5.col-md-12.col-sm-12.col-12
 							.passenger-banner__img
 								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/mobil-devlac-banner.png", alt="", class="banner-mobil-devlac")
 			.commercial-goods-section
@@ -179,12 +179,12 @@ body
 			.passenger-find
 				.container
 					.row.align-items-center
-						.col-lg-8.col-md-8.col-sm-6.col-12
+						.col-lg-8.col-md-12.col-sm-6.col-12
 							.passenger-find__title
 								|Не нашли что искали? 
 								br
 								span Ознакомьтесь со всеми продуктами Mobil Delvac
-						.col-lg-4.col-md-34col-sm-6.col-12
+						.col-lg-4.col-md-12.col-sm-6.col-12
 							a(href="https://www.ulmart.ru/catalog/motornye_masla_dla_gruzovyh_avto_1/brand_mobil", class="passenger-find__btn", target="_blank") Ознакомиться
 
 		section.update-section
