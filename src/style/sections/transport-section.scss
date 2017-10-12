@@ -102,3 +102,21 @@
 .transport-right .transport-text{
 	margin-bottom: 35px;
 }
+
+//Mobile
+.transport-section-mobile{
+	display: none;
+}
+.passenger-section-mob{
+	display: none;
+	padding: 0 0 40px;
+}
+.commercial-section-mob{
+	display: none;
+	padding: 0 0 40px;
+}
+.passenger-find__btn-mod{
+	font-size: 18px;
+	display: block;
+	padding: 2px 0;
+}

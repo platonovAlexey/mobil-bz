@@ -168,12 +168,237 @@
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 740px) {
+	.top-line__shop{
+		margin-bottom: 0;
+	}
+	.owl-carousel .owl-item{
+		height: 230px;
+	}
+	.owl-theme .owl-dots .owl-dot span{
+		width: 46px;
+		height: 4px;
+	}
+	.banner-item-1 .banner-text{
+		font-size: 15px;
+		display: block;
+	}
+	.banner-item{
+		min-height: 230px;
+		padding-top: 10px;
+	}
+	.banner-text{
+		display: none;
+	}
+	.banner-title{
+		font-size: 18px;
+	}
+	.banner-text{
+		font-size: 9px;
+		margin-bottom: 20px;
+	}
+	.banner-link-white{
+		padding: 8px 30px !important;
+	}
+	.banner-link, .banner-link-white{
+		width: 100%;
+		padding: 8px 30px !important;
+	}
+	.owl-theme .owl-nav.disabled+.owl-dots{
+		bottom: 10px;
+	}
+	.transport-section{
+		display: none;
+		
+	}
+	.transport-section-mobile{
+		display: block;
+		padding: 20px 5px 30px 5px;
+	}
 	.top-line{
 		height: auto;
 		text-align: center;
 		padding: 10px 0;
 	}
+	.top-line__shop {
+		font-size: 13px;
+		padding: 7px 5px;
+		margin-bottom: 0;
+	}
+	.top-line__logo{
+		margin: 0;
+		text-align: right;
+	}
+	.transport-section-passenger-mobile{
+		background: #000;
+		color: #fff;
+	}
+	.transport-section-commercial-mobile{
+		background: #f8cc00;
+		color: #000;
+	}
+	.transport-left{
+		text-align: left;
+	}
+	.transport__img-left-mob{
+		position: absolute;
+		top: 30px;
+		right: -20px;
+	}
+	.transport__img-right-mob{
+		position: absolute;
+		top: 13px;
+		right: -20px;
+	}
+	.transport-logo{
+		margin-bottom: 10px;
+		img{
+			height: 20px;
+		}
+	}
+	.transport-title{
+		font-size: 20px;
+		line-height: 1;
+		margin-bottom: 5px;
+	}
+	.transport-text{
+		font-size: 13px;
+		line-height: 1.15;
+		margin-bottom: 15px;
+	}
+	.transport-btn{
+		font-size: 13px;
+		line-height: .7;
+		padding: 8px 8px;
+	}
+	.transport-right{
+		padding-left: 0;
+	}
+
+	.passenger-banner{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.passenger-banner__title{
+		font-size: 20px;
+	}
+	.passenger-banner__text{
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.passenger-banner__img-one{
+		top:0;
+	}
+	.goods-section{
+		padding: 25px 0 15px;
+	}
+	.passenger-goods-wrapper{
+		margin-bottom: 40px;
+	}
+	.passenger-goods__img img{
+		height: 150px;
+		margin-right: 10px;
+	}
+	.passenger-goods__title{
+		font-size: 18px;
+	}
+	.passenger-goods__text{
+		height: auto;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.passenger-goods__text-block{
+		flex-basis: 54%;
+	}
+	.passenger-goods__link{
+		font-size: 20px;
+		display: block;
+		padding: 5px 0px;
+	}
+	.passenger-find__btn{
+		display: block;
+		padding: 2px 0px;
+		font-size: 21px;
+	}
+	.passenger-find{
+		padding-top: 20px;
+	}
+	.passenger-find__title{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.passenger-find__title span{
+		font-size: 14px;
+	}
+	.commercial-main-banner{
+		padding-top: 20px;
+	}
+	.commercial-main-banner{
+		height: auto;
+	}
+	.commercial-main-banner__title{
+		font-size: 18px;
+	}
+	.commercial-main-banner__product{
+		height: 200px;
+		margin: 0 auto;
+	}
+	.commercial-goods-section{
+		padding: 20px 0 0;
+	}
+	.banner-mobil-devlac{
+		top: 0;
+	}
+	.commercial-goods-wrapper{
+		margin-bottom: 40px;
+		display: flex;
+	}
+	.commercial-goods__img img{
+		height: 150px;
+		margin-right: 10px;
+	}
+	.commercial-goods__title{
+		font-size: 18px;
+	}
+	.commercial-goods__text{
+		height: auto;
+		font-size: 12px;
+		margin-bottom: 12px;
+	}
+	.commercial-section{
+		padding-bottom: 40px;
+	}
+	.update-section{
+		background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/update-section-bg-mob.jpg) center center no-repeat;
+		background-size: cover;
+		height: auto;
+		min-height: auto;
+		padding: 20px 0;
+		height: 239px;
+	}
+	.update-title{
+		font-size: 20px;
+		margin-bottom: 4px;
+		line-height: 1;
+	}
+	.update-text{
+		font-size: 13px;
+		margin-bottom: 16px;
+		line-height: 1.1;
+	}
+	.update-btn{
+		display: block;
+		font-size: 13px;
+		padding: 7px;
+		width: 140px;
+	}
+	.footer-slogan{
+		font-size: 12px;
+		line-height: 2;
+	}
+
+
+
 
 
 	//Update page mobile
@@ -196,7 +421,8 @@
 		padding: 10px 0;
 	}
 	.header-update__title{
-		font-size: 22px;
+		font-size: 18px;
+		margin-bottom: 20px;
 	}
 	.header-update__title-desc{
 		font-size: 14px;
@@ -210,7 +436,10 @@
 	}
 	.socials{
 		justify-content: flex-start;
-		margin-bottom: 30px;
+		margin: 10px 0 10px 0;
+	}
+	.socials-item{
+		margin-right: 13px;
 	}
 }
 

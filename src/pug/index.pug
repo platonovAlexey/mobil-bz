@@ -7,6 +7,188 @@ body
 	.layout_center_wrapper-project
 		+top-line()
 		+slider()
+		section.transport-section-mobile.transport-section-passenger-mobile
+			.container
+				.row
+					.col-12
+						.transport-left
+							img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/transport-item1-mob.png", alt="", class="transport__img-left-mob")
+							.transport-logo
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/mobil-logo-transport.png", alt="")
+							h2.transport-title
+								|Пассажирский 
+								br
+								|транспорт
+							p.transport-text
+								|Высокоэффективные смазоч-
+								br
+								|ные материалы для Вашего 
+								br
+								|авто,которые отвечают 
+								br
+								|требованиям самых жестких 
+								br
+								|отраслевых стандартов 
+								br
+								|или превосходят их.
+							a(href="#", target="_blank", class="transport-btn all-btn passenger-btn-mob", id="passenger-btn-mob") Узнать подробнее
+		section.passenger-section-mob
+			.passenger-banner
+				.container
+					.row.align-items-start
+						.col-lg-7.col-md-12.col-sm-12.col-12
+							.passenger-banner-wrapper
+								.passenger-banner__title
+									|Mobil 1™ Двигатель работает
+									br
+									|как новый
+								.passenger-banner__text
+									|Правильно подобранное моторное масло решает многое.
+									br
+									|Mobil 1 – полностью синтетическое моторное масло призвано
+									br
+									|обеспечить непревзойденную защиту и превосходные рабочие
+									br
+									|характеристики Вашего двигателя. 
+						.col-lg-5.col-md-12.col-sm-12.col-12
+							.passenger-banner__img
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-mobil-1.png", alt="", class="passenger-banner__img-one")
+			.goods-section
+				.container
+					.row.align-items-start
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in passengerGoods.slice(0,1)
+								+passenger-goods(item)
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in passengerGoods.slice(1,2)
+								+passenger-goods(item)
+
+					.row.align-items-start
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in passengerGoods.slice(2,3)
+								+passenger-goods(item)
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in passengerGoods.slice(3,4)
+								+passenger-goods(item)
+
+			.passenger-banner.passenger-banner-second
+				.container
+					.row.align-items-start
+						.col-lg-7.col-md-12.col-sm-12.col-12
+							.passenger-banner-wrapper
+								.passenger-banner__title
+									|Mobil Super™  Эффективная защита 
+									br
+									|для долгой жизни Вашего двигателя
+								.passenger-banner__text
+									|Mobil Super —масла премиум-класса. Они разработаны специально для того, чтобы обеспечить отличную защиту двигателя и его надежную работу, что позволяет вам ездить с полной уверенность.
+						.col-lg-5.col-md-12.col-sm-12.col-12
+							.passenger-banner__img
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-mobil-super.png", alt="", class="passenger-banner__img-two")
+
+			.goods-section
+				.container
+					.row.align-items-start
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in passengerGoods.slice(4,5)
+								+passenger-goods(item)
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in passengerGoods.slice(5,6)
+								+passenger-goods(item)
+
+			.passenger-find
+				.container
+					.row.align-items-center
+						.col-lg-8.col-md-12.col-sm-6.col-12
+							.passenger-find__title
+								|Не нашли что искали? 
+								br
+								span Ознакомьтесь со всеми продуктами Mobil для пассажирского транспорта
+						.col-lg-4.col-md-12.col-sm-6.col-12
+							a(href="https://www.ulmart.ru/catalog/engine_oil/brand_mobil", class="passenger-find__btn passenger-find__btn-mod", target="_blank") Ознакомиться
+		section.transport-section-mobile.transport-section-commercial-mobile
+			.container
+				.row
+					.col-12
+						.transport-right
+							img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/transport-item4-mob.png", alt="", class="transport__img-right-mob")
+							.transport-logo
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/mobil-logo-delvac-transport.png", alt="")
+							h2.transport-title
+								|Коммерческий 
+								br
+								|транспорт
+							p.transport-text
+								|Продукты для частных пере-
+								br
+								|возчиков и владельцев 
+								br
+								|автопарков. Воспользуйтесь   
+								br
+								|и Вы преимуществами наших 
+								br
+								|смазочных материалов 
+								br
+								|для коммерческой техники.
+							a(href="#", target="_blank", class="transport-btn commercial-btn-mob all-btn", id="commercial-btn-mob") Узнать подробнее
+		section.commercial-section-mob
+			.commercial-main-banner
+				.container
+					.row.align-items-start
+						.col-lg-8.col-md-45.col-sm-12.col-12
+							.commercial-main-banner__title
+								span Mobil Delvac™
+								|помогает легкому
+								br
+								|коммерческому транспорту
+								br
+								| в тяжелой работе
+						.col-lg-4.col-md-45.col-sm-12.col-12
+							img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/commercial-main-banner-product.png", alt="", class="commercial-main-banner__product")
+			.commercial-goods-section
+				.container
+					.row
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in commercialGoods.slice(0,1)
+								+commercial-goods(item)
+						.col-lg-6.col-md-6.col-sm-6.col-12
+							each item, number in commercialGoods.slice(1,2)
+								+commercial-goods(item)
+			.passenger-banner.commercial-banner
+				.container
+					.row.align-items-start
+						.col-lg-7.col-md-12.col-sm-12.col-12
+							.passenger-banner-wrapper
+								.passenger-banner__title
+									|Моторные масла Mobil Delvac™
+								.passenger-banner__text
+									|Моторные масла Mobil Delvac ™ предназначены для использования в коммерческом транспорте большой, средней и малой грузоподъемности. Они способствуют увеличению как срока службы двигателя, так и межсервисных интервалов. 
+						.col-lg-5.col-md-12.col-sm-12.col-12
+							.passenger-banner__img
+								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/mobil-devlac-banner.png", alt="", class="banner-mobil-devlac")
+			.commercial-goods-section
+				.container
+					.row
+						+grid-4()
+							each item, number in commercialGoods.slice(2,3)
+								+commercial-goods-second(item)
+						+grid-4()
+							each item, number in commercialGoods.slice(3,4)
+								+commercial-goods-second(item)
+						+grid-4()
+							each item, number in commercialGoods.slice(4,5)
+								+commercial-goods-second(item)
+			.passenger-find
+				.container
+					.row.align-items-center
+						.col-lg-8.col-md-12.col-sm-6.col-12
+							.passenger-find__title
+								|Не нашли что искали? 
+								br
+								span Ознакомьтесь со всеми продуктами Mobil Delvac
+						.col-lg-4.col-md-12.col-sm-6.col-12
+							a(href="https://www.ulmart.ru/catalog/motornye_masla_dla_gruzovyh_avto_1/brand_mobil", class="passenger-find__btn", target="_blank") Ознакомиться
+
 		section.transport-section
 			
 			//- img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/transport-item3.png", alt="", class="transport__img-right")
@@ -15,7 +197,7 @@ body
 			.container
 				.row
 					.col-lg-6.col-md-6.col-sm-12.col-12.p-0
-						.transport-left#transport-left
+						.transport-left
 							img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/transport-item1.png", alt="", class="transport__img-left")
 							.transport-logo
 								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/mobil-logo-transport.png", alt="")
@@ -36,7 +218,7 @@ body
 							a(href="#", target="_blank", class="transport-btn all-btn", id="passenger-btn") Узнать подробнее
 					.col-lg-6.col-md-6.col-sm-12.col-12
 						.row
-							.transport-right#transport-right
+							.transport-right
 								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/transport-item4.png", alt="", class="transport__img-right-inner")
 								.transport-logo
 									img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/mobil-logo-delvac-transport.png", alt="")
@@ -79,18 +261,18 @@ body
 			.goods-section
 				.container
 					.row.align-items-start
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-6.col-12
 							each item, number in passengerGoods.slice(0,1)
 								+passenger-goods(item)
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-6.col-12
 							each item, number in passengerGoods.slice(1,2)
 								+passenger-goods(item)
 
 					.row.align-items-start
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-6.col-12
 							each item, number in passengerGoods.slice(2,3)
 								+passenger-goods(item)
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-6.col-12
 							each item, number in passengerGoods.slice(3,4)
 								+passenger-goods(item)
 
@@ -112,10 +294,10 @@ body
 			.goods-section
 				.container
 					.row.align-items-start
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-6.col-12
 							each item, number in passengerGoods.slice(4,5)
 								+passenger-goods(item)
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-6.col-12
 							each item, number in passengerGoods.slice(5,6)
 								+passenger-goods(item)
 
@@ -146,10 +328,10 @@ body
 			.commercial-goods-section
 				.container
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-6.col-12
 							each item, number in commercialGoods.slice(0,1)
 								+commercial-goods(item)
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-6.col-12
 							each item, number in commercialGoods.slice(1,2)
 								+commercial-goods(item)
 			.passenger-banner.commercial-banner
