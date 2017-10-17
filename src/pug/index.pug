@@ -85,17 +85,15 @@ body
 						.col-lg-5.col-md-12.col-sm-12.col-12
 							.passenger-banner__img
 								img(src="https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-mobil-super.png", alt="", class="passenger-banner__img-two")
-
 			.goods-section
 				.container
 					.row.align-items-start
 						.col-lg-6.col-md-6.col-sm-6.col-12
-							each item, number in passengerGoods.slice(4,5)
-								+passenger-goods(item)
+							each item, number in passengerGoodsLate.slice(0,1)
+								+passenger-goods-late(item)
 						.col-lg-6.col-md-6.col-sm-6.col-12
-							each item, number in passengerGoods.slice(5,6)
-								+passenger-goods(item)
-
+							each item, number in passengerGoodsLate.slice(1,2)
+								+passenger-goods-late(item)
 			.passenger-find
 				.container
 					.row.align-items-center
@@ -295,11 +293,11 @@ body
 				.container
 					.row.align-items-start
 						.col-lg-6.col-md-6.col-sm-6.col-12
-							each item, number in passengerGoods.slice(4,5)
-								+passenger-goods(item)
+							each item, number in passengerGoodsLate.slice(0,1)
+								+passenger-goods-late(item)
 						.col-lg-6.col-md-6.col-sm-6.col-12
-							each item, number in passengerGoods.slice(5,6)
-								+passenger-goods(item)
+							each item, number in passengerGoodsLate.slice(1,2)
+								+passenger-goods-late(item)
 
 			.passenger-find
 				.container

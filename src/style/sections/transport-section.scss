@@ -5,6 +5,17 @@
 		width: 100%;
 		text-align: right;
 		padding-right: 62px;
+		&:before{
+				content: "";
+				display: block;
+				width: 150px;
+				height: 150px;
+				background: url('https://fast.ulmart.ru/ns/verstka/mobil-bz/img/bablze-action-passenger.png');
+				position: absolute;
+				z-index: 10;
+				top: 37%;
+				left: 42px;
+			}
 		&-arr{
 			width: 60px;
 			height: 60px;
@@ -48,6 +59,8 @@
 			left: -230px;
 			top: 212px;
 			z-index: -1;
+			display: block;
+			
 		}
 		&-right{
 			position: absolute;
@@ -75,9 +88,9 @@
 	}
 	&-text{
 		font-family: 'EMprint-Semibold';
-		font-size: 19px;
+		font-size: 16px;
 		font-weight: 600;
-		line-height: 1.16;
+		line-height: 1.25;
 		margin-bottom: 40px;
 	}
 	&-btn{

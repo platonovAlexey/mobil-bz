@@ -131,6 +131,10 @@
 			background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-item-bg3.png)no-repeat center center;
 			background-size: cover;
 		}
+		&-4{
+			background: url(https://fast.ulmart.ru/ns/verstka/mobil-bz/img/banner-item-bg4.jpg)no-repeat center center;
+			background-size: cover;
+		}
 	}
 	&-title{
 		font-family: 'EMprint-Semibold';
@@ -140,6 +144,14 @@
 		color: #fff;
 		text-align: left;
 		margin-bottom: 15px;
+		&--mod{
+			text-align: left;
+			margin-bottom: 50px;
+			sup{
+				top: -2em;
+				font-size: 25%;
+			}
+		}
 	}
 	&-text{
 		font-family: 'EMprint-Regular';
@@ -190,6 +202,11 @@
 	width: 100%;
 }
 
+.banner-logo-mobil{
+	margin-bottom: 25px;
+	width: 191px !important;
+	height: 40px;
+}
 
 .owl-theme .owl-nav.disabled+.owl-dots{
 	position: absolute;
