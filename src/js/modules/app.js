@@ -110,32 +110,39 @@ $(document).ready(function() {
 
     $('.js-banner-link-one').click(function(e){
         e.preventDefault();
-        $('body,html').animate({scrollTop : 2100},2000);
+        
+         if($(window).width() <= '740'){
+            $('body,html').animate({scrollTop : 1130},2000);
+            commercialSection.show("slow");
+            transportRightArr.show("slow");
+            passengerSection.hide("slow");
+            transportLeftArr.hide("slow");
+         } else{
+            $('body,html').animate({scrollTop : 2100},2000);
+            commercialSection.show("slow");
+            transportRightArr.show("slow");
+            passengerSection.hide("slow");
+            transportLeftArr.hide("slow");
+         }
 
-        commercialSection.show("slow");
-        transportRightArr.show("slow");
-        passengerSection.hide("slow");
-        transportLeftArr.hide("slow");
+        
     });
     $('.js-banner-link-two').click(function(e){
         e.preventDefault();
-        $('body,html').animate({scrollTop : 1900},2000);
+        if($(window).width() <= '740'){
+            $('body,html').animate({scrollTop : 1230},2000);
+            commercialSection.hide("slow");
+            transportRightArr.hide("slow");
+            passengerSection.show("slow");
+            transportLeftArr.show("slow");
+        } else{
+            $('body,html').animate({scrollTop : 1900},2000);
+            commercialSection.hide("slow");
+            transportRightArr.hide("slow");
+            passengerSection.show("slow");
+            transportLeftArr.show("slow");
+        }
         
-        commercialSection.hide("slow");
-        transportRightArr.hide("slow");
-        passengerSection.show("slow");
-        transportLeftArr.show("slow");
     });
-
-    // if(screen.width<740) {
-    //     $('.js-banner-link-one').click(function(e){
-    //         e.preventDefault();
-    //         $('body,html').animate({scrollTop : 800},1000);
-
-    //         commercialSectionMob.show("slow");
-    //         passengerSectionMob.hide("slow");
-
-    //     });
-    // }
 
 });
